@@ -4,7 +4,7 @@ import { Message, MessageBox } from 'element-ui';
 import * as echarts from 'echarts';
 import kit from "@/klcs/index.js" ;
 import util from "@/js/util"
-import klcs from "klcs"// node_modules版本,测试代码
+// import klcs from "klcs"// node_modules版本,测试代码
 
 // // 导出pdf
 // import html2Canvas from 'html2canvas'
@@ -15,7 +15,7 @@ import klcs from "klcs"// node_modules版本,测试代码
 // window.JsPDF = JsPDF;
 
 
-window.klcs = klcs
+// window.klcs = klcs
 window.kit = kit;
 window._ = kit._;
 window.util = util;

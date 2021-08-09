@@ -11,7 +11,7 @@
             <el-carousel trigger="click" height="114px">
               <el-carousel-item v-for="item in 4" :key="item">
                 <!-- <div style="{ backgroundUrl: 'https://cn.vuejs.org/images/logo.png' }"> -->
-                <img data-v-c3876194 src="../images/assets/aaa.png" style="height: 100%;width: 100%;" />
+                <!-- <img data-v-c3876194 src="../images/assets/aaa.png" style="height: 100%;width: 100%;" /> -->
                 <h3
                   style="position:absolute;top:0"
                   class="https://cn.vuejs.org/images/logo.png"
@@ -83,7 +83,7 @@
             </h1>
             <ul class="f-f1 f-df f-fdc">
               <li class="f-cp f-df f-jcl f-aic f-ml20 f-mr20 f-f1" v-for="item in 2" :key="item">
-                <img data-v-c3876194 src="/src/assets/aaa.png" class="newImage" />
+                <!-- <img data-v-c3876194 src="/src/assets/aaa.png" class="newImage" /> -->
                 <div
                   style="height:33px;overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;"
                 >案发时发生按时发送发顺丰大法师安抚啊的说法发送案发时发生按时发送发顺丰大法师安抚啊的说法发送案发时发生按时发送发顺丰大法师安抚啊的说法发送案发时发生按时发送发顺丰大法师安抚啊的说法发送</div>

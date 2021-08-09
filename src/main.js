@@ -11,11 +11,11 @@ import store from "./store.js"
 
 import './css/reset.css';
 import './css/swiper.css';
-import "./images/assets/leaflet/leaflet.css"
+// import "./images/assets/leaflet/leaflet.css"
 import './css/skin/theme/index.css';// 饿了么定制皮肤
 
-import UmyUi from 'umy-ui'
-import 'umy-ui/lib/theme-chalk/index.css';// 引入样式
+// import UmyUi from 'umy-ui'
+// import 'umy-ui/lib/theme-chalk/index.css';// 引入样式
 import simpleTable from "src/components/simpleTable/index";
 
 // 京东移动UI库,不好用
@@ -23,11 +23,11 @@ import simpleTable from "src/components/simpleTable/index";
 // import '@nutui/nutui/dist/nutui.css';
 // NutUI.install(Vue);
 
-import Vant from 'vant';
-import 'vant/lib/index.css';
-Vue.use(Vant);
+// import Vant from 'vant';
+// import 'vant/lib/index.css';
+// Vue.use(Vant);
 
-Vue.use(UmyUi);
+// Vue.use(UmyUi);
 
 console.warn("当前模式",process.env.TYPE)
 console.log(`%c打包时间:  ${process.env.DATE}`, "color:blue;");

@@ -1,8 +1,8 @@
 {
-  "name": "vue2.0-tool",
-  "author": "kelichao",
-  "version": "1.0.1",
-  "main": "src/klcs/index.js",
+  "name": "klcs-cont",
+  "version": "3.0.3",
+  "description": "工具函数升级版",
+  "main": "src/dist/klcs.js",
   "private": false,
   "scripts": {
     "start": "cross-env NODE_ENV=development  webpack-dev-server --inline  --host localhost --hot --env.dev --open",
@@ -16,7 +16,6 @@
     "element-ui": "^2.3.4",
     "jquery": "^3.5.0",
     "kit-pro": "^1.0.3",
-    "klcs": "^1.0.14",
     "leaflet": "^1.7.1",
     "less": "3.9",
     "less-loader": "5.0.0",
@@ -45,6 +44,7 @@
     "expose-loader": "^2.0.0",
     "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.24.1",
+    "klcs": "^3.1.4",
     "leaflet": "^1.7.1",
     "less": "3.9",
     "less-loader": "5.0.0",

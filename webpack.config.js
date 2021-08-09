@@ -22,10 +22,11 @@ module.exports = (options = {}) => ({
 
   entry: {
     index: './src/main.js',
+    klcs:"./src/klcs/index.js",
     env: "./src/env.js"
   },
   output: {
-    path: resolve(__dirname, `dist/` + process.env.NODE_ENV +"_" + fileName),
+     path: resolve(__dirname, `dist/` + process.env.NODE_ENV +"_" + fileName),
     filename: options.dev ? '[name].js' : '[name].js?[chunkhash]',
     chunkFilename: '[id].js?[chunkhash]',
 
@@ -74,7 +75,7 @@ module.exports = (options = {}) => ({
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest',"env"]
+      names: ['vendor', 'manifest',"env","klcs"]
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',

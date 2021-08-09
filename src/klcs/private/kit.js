@@ -67,25 +67,25 @@
     // node中有exports/module.exports模块用于导出某个js文件
     // node中可以用CMD模式调用此文件：var MATH = require("./MATH") 
     // 直接检验exports 是兼顾老版本nodeAPI
-    if (typeof exports !== "undefined") {
+    // if (typeof exports !== "undefined") {
 
-        // 在正常node环境中
-        // module以及module.exports都存在
-        if (typeof module !== "undefined" && module.exports) {
+    //     // 在正常node环境中
+    //     // module以及module.exports都存在
+    //     if (typeof module !== "undefined" && module.exports) {
 
-            // exports 原本挂载的是module.exports对象地址，
-            // 如果重写module.exports为kit对象则需要顺带
-            // 将exports地址指向kit，重写后他们两者会丢失联系
-            exports = module.exports = kit;
-        }
+    //         // exports 原本挂载的是module.exports对象地址，
+    //         // 如果重写module.exports为kit对象则需要顺带
+    //         // 将exports地址指向kit，重写后他们两者会丢失联系
+    //         exports = module.exports = kit;
+    //     }
 
-        exports.kit = kit;
+    //     exports.kit = kit;
 
-    } else {
-        // 把整体绑定在全局变量
-        // 其实就是global.kit
-        root.kit = kit;
-    }
+    // } else {
+    //     // 把整体绑定在全局变量
+    //     // 其实就是global.kit
+    //     root.kit = kit;
+    // }
 
     // defined这个方法是用于判断变量是否被定义
     // 如果还没有定义 Uncaught ReferenceError: * is not defined(…) -> 0
@@ -1914,27 +1914,10 @@
 
     kit.extend(kit);
 
-    // 兼容 AMD 规范
-    if (typeof define === 'function' && define.amd) {
-
-        // 要求是define包裹，然后返回整个key对象即可
-        define('kit', [], function() {
-            return kit;
-        });
-    }
-
-    // 兼容CMD规范
-    // 需要在文件底部注册CMD规范，以underscore为例
-    if (typeof define === "function" && define.cmd) {
-        define(function() {
-            return kit;
-        });
-    }
-
     window.proKit = kit;
 }.call(this));
 
-
+export default proKit ;
 // kit.Module 的getter,setter方法
 
 // 滑动到底部触发的事件，滑动到某个元素的高度触发事件

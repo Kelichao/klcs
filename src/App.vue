@@ -135,7 +135,7 @@ export default {
     // 空路由定位
     if (this.$route.fullPath == "/") {
       this.$router.push({
-        path:"xizhongdao"
+        path:"person"
       })
     }
   },
